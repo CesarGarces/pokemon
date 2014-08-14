@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Pokemon</title>
+  <script type="text/javascript" src="js/pokemon.js">
+  </script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <img src="img/pikachu.png" alt="Pikachu" class="img-circle" width="200px" >
+      <!--inicio de Pokemones-->
+        <p>
+          <button class="btn btn-info" data-toggle="modal" data-target="#pikachu">Info</button>
+        </p>
+        <div class="modal fade" id="pikachu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+               <button id="pikachu" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>            
+                 <h2 align="center" id="nombrePokemon">Pokemon de prueba</h2>          
+               </div>
+               <div class="modal-body">
+                 <div class="row">
+                  <div class="col-xs-6">
+                    <img src="img/pikachu.png" alt="Pikachu" class="img-circle" width="200px" >
+                  </div>
+                    <div class="col-xs-6"><p id="datosPokemon">Datos pokemon</p>
+                    </div>
+                 </div>
+               </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Cesar Garces 2014</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">Inicio();</script>       
+</body>
+</html>
